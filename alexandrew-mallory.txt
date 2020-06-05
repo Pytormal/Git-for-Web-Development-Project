@@ -229,14 +229,52 @@ Stretch Questions
 
     1. What is the difference between an inline element and a block element?
 
+        block element or block-level element that begins at a new line.
+
+        inline begins within a line and extends width only.
 
     2. What happens when an element is positioned absolutely? 
 
+        you place the absolutely positioned elements in relation to a parent container; the parent container is the positioning context. 
 
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
 
+        width: ; for the space it needs.
+
+        padding: ; to give it width it a width.
 
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
 
+        block elements{
+            <Address>
+            <figcaption>
+            <head>  
+        }
+        
+        inline elements{
+            <a>
+            <button>
+        }
+
+        inline-block element(s){
+            <img>
+        }
+
 
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+
+        the box model contains margin, border, padding and content.
+
+            you can set each:
+
+                margin: 4px 5px 3px 6px; first is top, second is right, third is bottom, last is left.
+
+                    you can also use border-top/left/right/bottom. distinquish each margin side
+
+                border: 4px dashed red; first is width of all sides, has to create a border of some kind so make the width work, needs a color to distinguish where the border is.
+
+                    you can also use border-top/left/right/bottom. distinquish each border side with another color and width.
+
+                padding: 4px 5px 3px 6px; same thing as margin
+
+                width: 4px 5px 3px 6px; same thing as padding and margin.
