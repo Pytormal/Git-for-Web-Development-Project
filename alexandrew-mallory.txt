@@ -1,53 +1,280 @@
-https://codepen.io/Pytormal/pen/yLYLdpd?editors=1100
-    1. What is Semantic HTML? 
-        creates a meaning or to reinforce the HTML markup of the information in Web applications and in webpages
-    2. What is HTML used for? 
-        the structure of a webpage
+https://codepen.io/Pytormal/pen/pogvdwy
+
+    1. What is Semantic HTML?
+
+        a way to show structure and meaning or to reinforce the HTML, allows other engineers to understand the HTML layout and structure.
+    
+    2. What is HTML used for?
+
+        HTML is used to make webpages
+
     3. What is an attribute and where do we put it?
+
         attirbutes provide additional information about an element, they are to be placed before the code
+        attribute is <a> </a> tags. used for hyperlink files or HTTPS url.
+            example: <a href="https://github.com/Pytormal> check out my GitHub profile> </a>
+                the attribute is linked to the webpage, you can select "check out. . ." to to web page.
+
     4. What is the h1 tag used for? How many times should I use it on a page?
-        creates structure for the use of SEO, use it once a page
+
+        h1 is a Heading 1 tag, is a main header that identifies most important content it can be used many times, but i like to use it once for the main heading in my page, there are h2-h6 to use for other various headings. think of semantic HTML.
+
     5. Name two tags that have required attributes
-        
-    6. What do we put in the headgit  of our HTML document? 
+
+        img and href tags require attributes    
+
+    6. What do we put in the head of our HTML document?  
+
+        <title> (required in every HTML document)
+        <style>
+        <base>
+        <link>
+        <meta>
+        <script>
+        <noscript>
+
+        these are the tags that we can put in our head of the HTML document.
+
     7. What is an id? 
+
+        used to specify a unique id. used by CSS or JavaScript to perform certain tasks for the element with a specific id value.
+
     8. What elements can I add an id to? 
+
+        you can add  id to any element
+
     9. How many times can I use the same id on a page? 
+
+        better to not use the same id on the page, though it is possible to use it many times on the page. but that is what classes are for.
+
     10. What is a class? 
+
+        classes allow us to select individual elements by using a special attribute in the HTML. allows designers and developers to be more efficient.
+
     11. What elements can I add a class to? 
+
+        you can add class to any element.
+
     12. How many times can I use the same class on a page? 
+
+        you can use class as manytimes as needed
+
     13. How do I get my link to open in a new tab?
+
+        target="_blank"
+            <a href="https://github.com/pytormal" target="_blank" class="fa fa-">Github</a>
+
     14. What is the alt attribute in the image tag used for? 
+
+         The required alt attribute specifies an alternate text for an image, if the image cannot be displayed.
+
     15. How do I reference an id?
+
+        reference the id with hasthtag "#" before the id name.
+            example: 
+            
+            #nameOfId{
+
+            }
+
     16. What is the difference between a section and a div
+
+        section is for large scale semantic
+        div used for smaller containers or for none semantic ideas to be communicated. 
+
     17. What is CSS used for? 
+
+        CSS is to create style and design in the web page.
+
     18. How to we select an element? Example - every h2 on the page
+
+        selecting h2 or all h2 in the page:
+
+        h2{
+
+        }
+
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
+
+         The difference between an ID and a class is that an ID can be used to identify one element, whereas a class can be used to identify more than one elements.
+
+            if i want to style a bunch of elements, i would create a class for those elements.
+
+            if i want to creat a unique element, i would use an id to make it standout and style just that element.
+
     20. How do we select classes in CSS?
+        
+        we use the period "." then the name of the class
+        .classname{
+
+        }
+
     21. How do we select a p element with a single class of “human””?
+
+        .human {
+            p{
+
+            }
+        }
+
+        .human p{
+
+        }
+
     22. What is a parent child selector? When would this be useful? 
+
+        A child selector is used to select an element that is a direct child of another element (parent).
+            instead of writing a ton of extra code, you could nest the code in the parent that takes less code.
+
     23. How do you select all links within a div with the class of sidebar?
+
+        using a nested version: sidebar is the class, the div is in that sidebar and a tag is where your links are.
+            .sidebar {
+                div{
+                    a{
+
+                    }
+                }
+            }
+        
+        basic CSS none nested version: same specificity but not the best end-game format. overall will use more code.
+            .sidebar div a{
+
+            }
+
     24. What is a pseudo selector?
+        
+        keyword added to the end of a selector, preceded by a colon (: ), which is used to specify that you want to style the selected element but only when it is in a certain state.
+
+        for user's interaction styling based.
+            example p:hover{} when a user hovers over the p element, it does something.
+            when applying psrudo-class selectors we must always preceede the class with a colon ":"
+
     25. What do we use the change the spacing between lines?
+
+        line-height: ;
+
     26. What do we use to change the spacing between letters?
+
+        letter-spacing: ;
+
+
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+
+        text-transform: uppercase;
+        text-transform: lowercase;
+        text-transform: capitalize;
+
+
     28. How do I add a 1px border around my div that is dotted and black?
+
+        div{
+            border: 1px dotted black;
+        }
+
     29. How do I select everything on the page? 
+
+        Windows users use Ctrl+a
+
     30. How do I write a comment in CSS?
+
+        Ctrl+/
+        or
+        /* */
+
     31. How do I find out what file I am in, when I am using the command line? 
+
+        the folder you are in shows in the command line.
+
     32. Using the command line - how do I see a list of files/folders in my current folder?
+
+        type ls to view files and folders within the directory
+
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
+
+        rm filename. rm will delete any file name it is given, could also be used to remove any number of files by adding a space between each file.
+            removing a file does not send it to the recycle bin,  the file is unrecoverable.
+
     34. Why should I use version control? 
+            
+        using version control is useful when i make a terrible mistake or lose important files i can easily recover my files from the version control system
+
     35. How often should I commit to github?
-        commit as often as needed, with comments telling what changes were made
+
+        better to commit regularly with comments of changes
+
     36. What is the command we would use to push our repo up to github? 
-         git push --set-upstream origin "filename"
+
+        git push --set-upstream origin branch-name
+
     37. Walk me through Lambda's git flow. 
+
+        1. fork the Repo so it becomes your own
+        2. add you TL as a collaborator
+        3. Clone your Repo. on your terminal or command line: git clone <paste your Repo url>
+        4 Create a branch that you will be working on in the file of your Repo folder
+            A. cd <repo directory>
+            B. git checkout -b 'firstname-lastname'
+        5. Push your new branch up to GitHub and make all future pushes to that branch.
+            A. git push -u origin firstname-lastname
+            B. on GitHub:
+                1. Compare & Pull Request -> Base: YOUR MASTER (Not the Lambda Master)
+                2. Compare fork: YOUR FORK
+        6. Add your TL as a reviewer on the Pull Request
+            A. On the 'Open a Pull Request' page click on Reviewers. If your TL has accepted your invite, then you should be able to select them here. If not, then they haven't accepted the invite, and come back later...
+            B. Your TL will merge the work into YOUR Master fork when they have reviewed and approved it.
+
 
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
+
+        block element or block-level element that begins at a new line.
+
+        inline begins within a line and extends width only.
+
     2. What happens when an element is positioned absolutely? 
+
+        you place the absolutely positioned elements in relation to a parent container; the parent container is the positioning context. 
+
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+
+        width: ; for the space it needs.
+
+        padding: ; to give it width it a width.
+
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+
+        block elements{
+            <Address>
+            <figcaption>
+            <head>  
+        }
+        
+        inline elements{
+            <a>
+            <button>
+        }
+
+        inline-block element(s){
+            <img>
+        }
+
+
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+
+        the box model contains margin, border, padding and content.
+
+            you can set each:
+
+                margin: 4px 5px 3px 6px; first is top, second is right, third is bottom, last is left.
+
+                    you can also use border-top/left/right/bottom. distinquish each margin side
+
+                border: 4px dashed red; first is width of all sides, has to create a border of some kind so make the width work, needs a color to distinguish where the border is.
+
+                    you can also use border-top/left/right/bottom. distinquish each border side with another color and width.
+
+                padding: 4px 5px 3px 6px; same thing as margin
+
+                width: 4px 5px 3px 6px; same thing as padding and margin.
